@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            background-color: rgb(248, 248, 203);
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        .especial {
+            background-color: rgb(177, 177, 177);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a:visited {
+        color: purple;
+       }
+
+        .especial::before {
+            content: '> ';
+        }
+
+        .especial::after {
+            content: ' <';
+        }
+
+    
+        a:hover {
+            text-decoration: underline;
+            font: italic bold 1.2em Arial, Verdana, sans-serif;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="http://github.com/danielborgesx" class="especial" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="http://youtube.com/@MrDanihhhh" class="especial" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="#" target="_blank" rel="external">Site do CursoEmVideo</a></li>
+    </ul>
+    
+</body>
+</html>
